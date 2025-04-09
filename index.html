@@ -1,0 +1,168 @@
+<!DOCTYPE html>
+<html lang="fr">
+
+<head>
+  <meta charset="UTF-8">
+  <title>Accueil</title>
+  <link rel="stylesheet" href="style.css" />
+  <script src="script.js"></script>
+</head>
+
+<body class="bodyindex">
+
+<!-- Menu en haut de la page -->
+<div class = "menuhaut">
+	<ul>
+		<li><a href="index.html"> Accueil</a></li>
+		<li><a href="projets.html"> Mes projets</a></li>
+		<li><a href="veille.html"> Veille</a></li>
+		<li><a href="contact.html"> Me contacter</a></li>
+	</ul>
+</div>	
+
+<!-- Photo de bienvenue-->
+<h1 id = "bienvenue"> Bienvenue sur mon portfolio !<br> Faites défilez vers le bas pour en apprendre plus sur moi. </h1>
+
+<!--A propos de moi-->
+<h2 id="propos"> À propos de moi: </h2>
+	
+	<!--Photo-->
+	<img id = "photomoi" 
+	src = "Images/moi.jpeg" 
+	width="150" 
+	alt = "Photo de moi">
+	
+	<!-- Description-->
+	<p id = "moi" style ="margin-top : 107px;"> <b>Nayiri Kebba</b>
+	<br> <span style='color:gray'><i>Étudiante en L2 MIASHS </i></span></p> 
+	
+
+
+<!-- Onglets dynamiques -->
+  <!-- Liens des onglets -->
+  <div class="tab">
+    <button class="tablinks" onclick="openTab(event, 'Formations')">Formations et expérience professionnelle</button>
+    <button class="tablinks" onclick="openTab(event, 'Langues')">Langues</button>
+    <button class="tablinks" onclick="openTab(event, 'Passions')">Loisirs</button>
+  </div>
+
+  <!-- Contenu des onglets -->
+  <div id="Formations" class="tabcontent">
+  
+	<h3 id = "sous-titre"> Formations : </h3>
+	
+	<table class="formation">
+	
+	<tr>
+		<td><img src = "https://www.sorbonne.fr/wp-content/uploads/Logo_Paris-1_2015.jpg" width ="100" alt = "Logo de Paris 1"></td>
+		<td>2023 - à ce jour : </td>
+		<td>Licence Mathématiques et Informatiques Appliqués aux Sciences Humaines et Sociales (MIASHS) - Renforcement informatique à partir de la L2</td>
+	</tr>
+	
+	<tr>
+		<td><img src = "https://www.sorbonne.fr/wp-content/uploads/Logo_Paris-1_2015.jpg" width ="100" alt = "Logo de Paris 1"></td>
+		<td>2022 - 2023 : </td>
+		<td>Classe préparatoire économique au Lycée Carnot (Maths appliquées) & L1 Gestion</td>
+	</tr>
+	
+	<tr>
+		<td><img src = "https://www.ecole-alsacienne.org/wp-content/uploads/sites/18/2024/10/logo-ea-fond-rouge.png" 
+		width ="100" alt = "Logo de l'École Alsacienne"></td>
+		<td>2015 - 2022 : </td>
+		<td>Collège et Lycée à l'École Alsacienne (Paris) : <ul id="listeaccueil"> <li>Spécialités : Mathématiques & Sciences Economiques et Sociales</li><li> Options : Classe européenne en allemand, Droit, & Russe</li></td>
+	</tr>
+	
+	</table>
+	
+	
+	<h3 id = "sous-titre"> Expérience professionnelle :</h3>
+	
+	<table class="formation"> 
+	
+	<tr> 
+		<td> <img src = "https://www.lachance.media/wp-content/uploads/2017/08/Logo-Ville-de-Paris-874x768-site.png" 
+		width = "100" alt = "Logo de la Mairie de Paris"></td><td>2023 - à ce jour : </td>
+		<td> Animatrice : 
+			<ul id="listeaccueil">
+				<li>Temps périscolaires</li>
+				<li>Centre de loisirs en maternelle et élémentaire (petites et grandes vacances)</li>
+				<li>Centre petite enfance</li>
+			</ul>
+		</td>
+	</tr>
+	
+	</table>
+	
+  </div>
+
+  <div id="Langues" class="tabcontent">
+  
+    <h3 id = "sous-titre">Langues</h3>
+	
+    <table class="formation">
+		<tr>
+			<td> 
+				<img src = "https://upload.wikimedia.org/wikipedia/commons/thumb/3/3f/Ensign_of_France.svg/langfr-225px-Ensign_of_France.svg.png" 
+				width ="100" alt = "Drapeau français"></td>
+			<td> Langue maternelle</td>
+		</tr>
+		
+		<tr>
+			<td> 
+				<img src = "https://cdn.pixabay.com/photo/2012/04/23/16/15/flags-38754_1280.png" width = "100" alt = "Drapeau anglais/américain">
+			<td> Niveau C1 (courant)</td>
+			<td> Certificiation IELTS</td>
+		</tr>
+		
+		<tr>
+			<td>
+				<img src = "https://upload.wikimedia.org/wikipedia/commons/thumb/2/21/Flag_of_Germany_%283-2%29.svg/220px-Flag_of_Germany_%283-2%29.svg.png" 
+				width ="100" alt ="Drapeau allemand"></td>
+				<td> Niveau B2 (indépendant)</td>
+				<td>Certification du Goethe Institut</td>
+		</tr>
+		
+		<tr>
+			<td class="formation"><img src = "https://upload.wikimedia.org/wikipedia/commons/thumb/f/f3/Flag_of_Russia.svg/langfr-225px-Flag_of_Russia.svg.png" 
+			width="100" alt="Drapeau russe" border = "1px"></td>
+			<td>Niveau A2 (intermédiaire)</td>
+		</tr>
+		
+	</table>
+  </div>
+
+  <div id="Passions" class="tabcontent">
+  
+    <h3 id ="sous-titre">Loisirs et engagement associatif</h3>
+	
+    <table class="formation">
+	
+	<tr>
+		<td>
+			<video width = "400" controls><source src="Images/musiquechambre.mp4" type="video/mp4"/></video>
+		</td>
+		<td style="vertical-align: bottom;font-weight:bold;font-size : 20px;"> Piano </td>
+		<td style="vertical-align: bottom; font-size:20px;"> Pratiqué 5 ans en musique de chambre et 9 ans en conservatoire</td>
+	</tr>
+	
+	<tr>
+		<td>
+			<video width ="400" controls><source src="Images/step.mp4" type="video/mp4"/></video>
+		</td>
+		<td style ="vertical-align:bottom; font-weight:bold;font-size:20px;"> Sport </td> 
+		<td style="vertical-align:bottom; font-size:20px;">
+			<ul id="listeaccueil">
+				<li> Step en association sportive du lycée (3 ans)</li>
+				<li> Course (inscription au semi-marathon de 2025)</li>
+				<li>Escalade (loisirs)</li>
+				<li> Danse (8 ans en conservatoire et en association arménienne)</li>
+			</ul>
+		</td>
+	</tr>
+	
+	</table>
+ </div>
+
+</body>
+
+</html>
